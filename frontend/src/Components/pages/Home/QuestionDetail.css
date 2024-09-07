@@ -1,0 +1,12 @@
+/* Container for the question detail page */
+.question_detail_container {
+  background-color: black;
+  display: grid;
+  grid-template-columns: auto 1fr; /* Adjusts to `InfoCard` size */
+  gap: calc(var(--unit) * 1);
+  margin: 0 auto;
+  height: 91vh;
+  overflow: auto; /* Allow scrolling if content overflows */
+  align-items: stretch; /* Ensure columns stretch to fill container height */
+  padding: calc(var(--unit) * 1);
+}

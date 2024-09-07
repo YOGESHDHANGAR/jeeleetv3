@@ -1,0 +1,75 @@
+.dropdown {
+  position: relative;
+  width: calc(var(--unit) * 15); /* 120px */
+  font-family: "Montserrat", sans-serif;
+  margin-right: calc(var(--unit) * 1); /* 8px */
+}
+
+.dropdown-header {
+  background-color: var(--dropdown-header-background);
+  color: var(--dropdown-arrow-color);
+  padding: calc(var(--unit) * 1); /* 8px */
+  border-radius: calc(var(--unit) * 0.5); /* 4px */
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-header:hover {
+  background-color: var(--dropdown-header-background-hover);
+}
+
+.dropdown-arrow {
+  margin-left: calc(var(--unit) * 1); /* 8px */
+  width: 0;
+  height: 0;
+  border-left: calc(var(--unit) * 0.75) solid transparent; /* 6px */
+  border-right: calc(var(--unit) * 0.75) solid transparent; /* 6px */
+  border-top: calc(var(--unit) * 0.75) solid var(--dropdown-arrow-color); /* 6px */
+  transition: transform 0.3s ease;
+}
+
+.dropdown-arrow.open {
+  transform: rotate(-180deg);
+}
+
+.dropdown-menu {
+  background-color: var(--dropdown-background);
+  border-radius: calc(var(--unit) * 1); /* 8px */
+  position: absolute;
+  top: calc(100% + var(--unit)); /* 8px */
+  left: 0;
+  min-width: 100%;
+  width: auto;
+  max-height: calc(var(--unit) * 25); /* 200px */
+  overflow-y: auto; /* Makes the dropdown scrollable if content exceeds max-height */
+  z-index: 10;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0px calc(var(--unit) * 1) calc(var(--unit) * 2) rgba(0, 0, 0, 0.2); /* 8px 16px */
+}
+
+.dropdown-option {
+  padding: calc(var(--unit) * 1); /* 8px */
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: calc(var(--unit) * 0.5); /* 4px */
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dropdown-option:hover {
+  background-color: var(--dropdown-option-background-hover);
+}
+
+.tick {
+  margin-left: calc(var(--unit) * 1); /* 8px */
+  color: var(--tick-color);
+}

@@ -1,0 +1,19 @@
+.home_main {
+  padding: calc(var(--unit) * 5) 8vw; /* 24px 8vw */
+}
+
+.table_loading,
+.table_error {
+  text-align: center;
+  padding: 20px;
+}
+
+.table_loading {
+  font-size: 18px;
+  color: #555;
+}
+
+.table_error {
+  font-size: 18px;
+  color: red;
+}

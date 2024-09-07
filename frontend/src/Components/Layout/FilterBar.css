@@ -1,0 +1,51 @@
+/* FilterBar.css */
+.filter-bar {
+  display: flex;
+  align-items: center;
+  border-radius: calc(var(--unit) * 1); /* 8px */
+  justify-content: space-between; /* Distribute space between items */
+}
+
+.filter-bar > * {
+  margin-right: calc(var(--unit) * 1); /* 10px */
+}
+
+.filter-bar > *:last-child {
+  margin-right: 0; /* Remove margin-right from the last child */
+}
+
+.filter-group {
+  display: flex;
+  margin-right: calc(var(--unit) * 1); /* 10px */
+}
+
+.filter-group label {
+  display: block;
+  margin-right: calc(var(--unit) * 1); /* 8px */
+  color: var(--filter-group-text); /* Text color for labels */
+}
+
+.filter-group select {
+  padding: calc(var(--unit) * 0.5);
+  border: 1px solid var(--filter-group-border); /* Border color for select elements */
+  border-radius: 4px; /* Optional: Add border-radius for rounded corners */
+}
+
+.search-bar input {
+  padding: calc(var(--unit) * 0.5);
+  border: 1px solid var(--search-bar-border); /* Border color for search input */
+  border-radius: 4px; /* Optional: Add border-radius for rounded corners */
+}
+
+.clear-filters {
+  padding: calc(var(--unit) * 0.5) calc(var(--unit) * 1);
+  background-color: var(--clear-filters-background);
+  border: 1px solid var(--clear-filters-border); /* Border color for clear filters button */
+  cursor: pointer;
+  border-radius: calc(var(--unit) * 0.5); /* 4px */
+  transition: background-color 0.3s ease; /* Optional: Add transition for hover effect */
+}
+
+.clear-filters:hover {
+  background-color: rgb(240, 240, 240); /* Optional: Light gray hover effect */
+}

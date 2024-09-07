@@ -1,0 +1,31 @@
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: #333; /* Background color matching the design */
+  padding: calc(var(--unit) * 1) calc(var(--unit) * 2); /* 8px 16px */
+  border-radius: calc(var(--unit) * 0.5); /* 4px */
+  width: 300px; /* Adjust the width as needed */
+}
+
+.search-input {
+  background-color: transparent;
+  border: none;
+  color: #ccc; /* Text color matching the design */
+  width: 100%;
+  outline: none;
+  font-size: calc(var(--unit) * 2); /* 16px */
+}
+
+.search-input::placeholder {
+  color: #666; /* Placeholder text color matching the design */
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+.search-icon {
+  width: calc(var(--unit) * 2.25); /* 18px */
+  height: calc(var(--unit) * 2.25); /* 18px */
+  margin-right: calc(var(--unit) * 1); /* 8px */
+}

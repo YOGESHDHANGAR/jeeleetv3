@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+html::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #888; /* Directly use color instead of a variable */
+  border-radius: 10px;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Directly use color instead of a variable */
+  border-radius: 10px;
+}
+
+html {
+  scrollbar-width: thin; /* Thin scrollbar for Firefox */
+  scrollbar-color: #888 #f1f1f1; /* Directly use color instead of a variable */
+}
+
+:root {
+  --scrollbar-thumb-color: #888; /* Customize as needed */
+  --scrollbar-track-color: #f1f1f1; /* Customize as needed */
+  --dark-background: #1e1e1e;
+  --header-background: #292929;
+  --row-hover-background: #333;
+  --divider-color: #333;
+  --link-color: #00b4d8;
+  --difficulty-easy: #00e676;
+  --difficulty-medium: rgb(255, 180, 38);
+  --difficulty-hard: #f44336;
+  --navbar-background: rgb(36, 36, 36);
+  --navbar-border: rgb(70, 70, 70);
+  --nav-link-inactive: #a6a6a6;
+  --nav-link-active: white;
+  --nav-link-hover: rgb(255, 165, 0);
+  --auth-link-hover: rgb(255, 165, 0);
+  --premium-button-background: rgb(255, 165, 0);
+  --premium-button-background-hover: rgb(255, 140, 0);
+  --premium-button-text: black;
+  --filter-bar-background: rgb(49, 49, 49);
+  --filter-group-background: rgb(58, 58, 58);
+  --filter-group-border: #ccc;
+  --filter-group-text: white;
+  --search-bar-border: #ccc;
+  --clear-filters-background: #fff;
+  --clear-filters-border: #ccc;
+  --dropdown-background: rgb(49, 49, 49);
+  --dropdown-header-background: rgb(49, 49, 49);
+  --dropdown-header-background-hover: rgb(58, 58, 58);
+  --dropdown-arrow-color: rgb(206, 206, 206);
+  --dropdown-option-background-hover: rgb(63, 63, 63);
+  --tick-color: #00e676;
+
+  --unit: 8px;
+
+  --text-color1: #a6a6a6;
+  --text-color2: rgb(206, 206, 206);
+  --text-color3: rgb(234, 234, 234);
+
+  --button-background1: rgb(49, 49, 49);
+  --button-background-hover1: rgb(58, 58, 58);
+
+  --background-color1: rgb(51, 51, 51);
+  --background-color2: rgb(38, 38, 38);
+  --background-color3: rgb(19, 19, 19);
+
+  --button-background-hover1: #ddd; /* Example hover background color */
+  --text-color-hover: #000; /* Example hover text color */
+  --button-background-selected: #aaa; /* Example selected background color */
+  --text-color-selected: #fff; /* Example selected text color */
+}

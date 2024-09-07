@@ -1,0 +1,137 @@
+/* Info card (left side) */
+.info_card {
+  background-color: var(--background-color2);
+  border: 1px solid var(--divider-color);
+  border-radius: calc(var(--unit) * 1);
+  color: var(--text-color2);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: width 0.3s ease; /* Smooth transition for width change */
+  overflow: hidden; /* Ensure no content spills outside */
+}
+
+.info_card.open {
+  width: 300px; /* Adjust to a fixed width when open */
+}
+
+.info_card.closed {
+  width: 28px; /* Width when closed */
+}
+
+.info_card_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background-color1);
+  color: var(--text-color2);
+  font-size: 15px;
+  border-bottom: 1px solid var(--divider-color);
+  padding: calc(var(--unit) * 0.5) calc(var(--unit) * 1);
+  position: relative;
+  height: calc(var(--unit) * 3); /* Fixed height for the top bar */
+}
+
+.toggle_button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: var(--text-color2);
+}
+
+.like_dislike {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--unit) * 1);
+  transition: opacity 0.3s ease; /* Smooth transition for visibility */
+}
+
+.like_dislike.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.like_dislike.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Middle section */
+.info_card_content {
+  padding: calc(var(--unit) * 1) calc(var(--unit) * 1.5);
+  display: none; /* Hide content when closed */
+  flex: 1; /* Allow content section to expand and take available space */
+  background-color: var(
+    --background-color2
+  ); /* Lighter background color for better readability */
+  overflow-y: auto; /* Scroll if content overflows */
+}
+
+.info_card.open .info_card_content {
+  display: block; /* Show content when open */
+  border-top: 1px solid var(--divider-color); /* Optional border for separation */
+  border-bottom: 1px solid var(--divider-color); /* Optional border for separation */
+}
+
+/* Question details */
+.info_card_content p {
+  margin: calc(var(--unit) * 0.5) 0;
+  line-height: 1.6; /* Improve readability with line spacing */
+}
+
+.info_card_content strong {
+  color: var(--text-color1); /* Use a different color for labels */
+  display: block; /* Make labels block level to improve spacing */
+  margin-bottom: calc(var(--unit) * 0.5); /* Space between label and content */
+}
+
+.info_card_content span {
+  display: inline-block; /* Ensure span elements fit well within text */
+  padding: calc(var(--unit) * 0.25) calc(var(--unit) * 0.5);
+  border-radius: calc(var(--unit) * 0.25);
+  background-color: var(
+    --background-color3
+  ); /* Background for the span elements */
+  color: var(--text-color2); /* Text color for the span elements */
+}
+
+/* Example styles for difficulty levels */
+.difficulty-easy {
+  color: green; /* Color for easy difficulty level */
+}
+
+.difficulty-medium {
+  color: orange; /* Color for medium difficulty level */
+}
+
+.difficulty-hard {
+  color: red; /* Color for hard difficulty level */
+}
+
+/* Bottom section */
+.info_card_bottom {
+  padding: calc(var(--unit) * 0.5) calc(var(--unit) * 1);
+  background-color: var(--background-color1);
+  border-top: 1px solid var(--divider-color);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  transition: opacity 0.3s ease; /* Smooth transition for visibility */
+}
+
+.info_card_bottom.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.info_card_bottom.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.feedback_icon {
+  font-size: 20px;
+  cursor: pointer;
+  color: var(--text-color2);
+}

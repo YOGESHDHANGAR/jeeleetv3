@@ -1,0 +1,101 @@
+.navbar {
+  display: flex;
+  width: 80vw;
+  justify-content: space-between;
+  align-items: center;
+  padding: calc(var(--unit) * 0.25) calc(var(--unit) * 2.5); /* 4px 20px */
+  background-color: var(--navbar-background);
+  border-bottom: 1px solid var(--navbar-border);
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: calc(var(--unit) * 3); /* 20px */
+}
+
+.logo img {
+  height: calc(var(--unit) * 5); /* 40px */
+  width: auto; /* Maintain aspect ratio */
+}
+
+.nav-links {
+  display: flex;
+  gap: calc(var(--unit) * 3.5); /* 10px */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  position: relative;
+  font-size: calc(var(--unit) * 1.95); /* 16px */
+  color: var(--nav-link-inactive); /* Color for inactive links */
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-link.active {
+  color: var(--nav-link-active); /* Active link color */
+}
+
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: calc(var(--unit) * -0.8); /* -4px */
+  left: 0;
+  right: 0;
+  height: calc(var(--unit) * 0.25); /* 2px */
+  background-color: var(--nav-link-active);
+  width: 100%;
+}
+
+.nav-link.pending {
+  color: var(--nav-link-pending); /* Define a color for pending state */
+}
+
+.nav-link:hover {
+  color: var(--nav-link-hover); /* Adds a hover effect */
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.auth-links {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--unit) * 1.25); /* 10px */
+  margin-right: calc(var(--unit) * 2.5); /* 20px */
+}
+
+.auth-link {
+  font-size: calc(var(--unit) * 2); /* 16px */
+  color: var(--auth-link-color);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.auth-link:hover {
+  color: var(--auth-link-hover); /* Hover effect for auth links */
+}
+
+.premium-button {
+  background-color: var(--premium-button-background);
+  border: none;
+  border-radius: calc(var(--unit) * 2.5); /* 20px */
+  padding: calc(var(--unit) * 0.625) calc(var(--unit) * 1.875); /* 5px 15px */
+  color: var(--premium-button-text);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.premium-button:hover {
+  background-color: var(--premium-button-background-hover);
+  transform: scale(1.05);
+}

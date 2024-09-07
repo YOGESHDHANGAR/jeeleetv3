@@ -1,0 +1,27 @@
+.applied-filters {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: calc(var(--unit) * 1) 0; /* 16px 0 */
+}
+
+.filters-list {
+  display: flex; /* Display filters horizontally */
+  gap: 8px; /* Space between filters */
+}
+
+.filter-item {
+  display: flex;
+  align-items: center;
+  border-radius: 4px; /* Adjust border radius as needed */
+  padding: 4px 8px; /* Adjust padding as needed */
+  background-color: var(--dropdown-background);
+  font-size: 14px;
+}
+
+.remove-filter {
+  margin-left: 8px; /* Space between filter text and cross icon */
+  cursor: pointer;
+  font-weight: bold;
+  color: rgb(255, 217, 217); /* Color of the cross icon */
+}
